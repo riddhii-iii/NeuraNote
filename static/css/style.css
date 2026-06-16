@@ -1,0 +1,73 @@
+:root {
+    --primary: #3b82f6;
+    --primary-dark: #1d4ed8;
+    --surface: #ffffff;
+    --surface-alt: #f8fafc;
+    --text: #0f172a;
+    --muted: #64748b;
+    --border: #e2e8f0;
+    --shadow: 0 24px 64px rgba(15, 23, 42, 0.08);
+}
+
+body {
+    font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: linear-gradient(180deg, #eff6ff 0%, #f8fafc 100%);
+    color: var(--text);
+}
+
+a {
+    color: var(--primary);
+}
+
+.navbar {
+    background: linear-gradient(90deg, #2563eb 0%, #1d4ed8 100%) !important;
+}
+
+.card {
+    background: var(--surface);
+    border: 1px solid rgba(226, 232, 240, 0.9);
+}
+
+.btn-primary,
+.btn-success,
+.btn-outline-primary,
+.btn-outline-secondary {
+    font-weight: 600;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+}
+
+.form-control {
+    border-radius: 1rem;
+    box-shadow: none;
+}
+
+textarea.form-control {
+    min-height: 220px;
+}
+
+.list-group-item {
+    border-color: rgba(226, 232, 240, 0.9);
+}
+
+.alert {
+    border-radius: 1.25rem;
+}
+
+footer {
+    background: transparent;
+}
+
+@media (max-width: 767px) {
+    .card {
+        border-radius: 1.5rem;
+    }
+}

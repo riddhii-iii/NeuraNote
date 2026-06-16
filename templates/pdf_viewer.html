@@ -1,0 +1,23 @@
+<h2>{{ filename }}</h2>
+
+<iframe 
+    src="{{ pdf_path }}" 
+    width="70%" 
+    height="600px">
+</iframe>
+
+<hr>
+
+<h3>Ask AI about this PDF</h3>
+
+<form action="/pdf/ask/{{ file_id }}" method="post">
+    <input type="text" 
+           name="question"
+           placeholder="Ask a question from this PDF..."
+           style="width:80%; padding:8px;"
+           required>
+    <button type="submit">Ask AI</button>
+</form>
+
+<br>
+<a href="javascript:history.back()">Back</a>
